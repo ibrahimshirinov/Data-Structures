@@ -6,16 +6,15 @@ public class LinkedList {
     Node current;
     Node temporary;
 
+   
     public  LinkedList () {
 
         head = null;
         current = null;
         temporary = null;
-
-
     }
 
-
+    
     public void addNode(int addData) {
 
         Node n = new Node ();
@@ -24,23 +23,19 @@ public class LinkedList {
 
           if (head != null) {
 
-                current = head;
-                while(current.next != null) {
-
-                    current = current.next;
-                }
-                current.next= n;
+            current = head;
+            while(current.next != null) {
+                
+                current = current.next;
+             
+            }
+           current.next= n;
 
           }
 
           else {
-
               head= n ;
-
           }
-
-
-
 
     }
 
